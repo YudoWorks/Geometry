@@ -21,11 +21,35 @@ system. So that I can calculate its length.
 
 ## How to Run The Program
 
-### How to Use
-
 ### How to Import to IntelliJ
 
 https://www.jetbrains.com/help/idea/library.html
+
+### Usage
+
+```java
+package com.company;
+
+import com.minibootcamp.ada.Line;
+import com.minibootcamp.ada.Point;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Point firstPoint = new Point(0, 0);
+        Point secondPoint = new Point(0, 0);
+
+        Line line = new Line(firstPoint, secondPoint);
+        System.out.print("line length from firstPoint and secondPoint is " + line.getLength());
+    }
+}
+```
+
+### CLI
+
+```bash
+line length from firstPoint and secondPoint is 0
+```
 
 ## How to Run The Tests
 
