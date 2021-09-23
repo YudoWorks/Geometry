@@ -16,6 +16,8 @@ public class Line {
             } else if (this.firstPoint.x > this.secondPoint.x) {
                 return firstPoint.x - secondPoint.x;
             }
+        } else if (this.firstPoint.y > this.secondPoint.y) {
+            return firstPoint.y - secondPoint.y;
         }
 
         return secondPoint.y - firstPoint.y;
