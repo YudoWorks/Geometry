@@ -3,6 +3,7 @@ package com.minibootcamp.ada;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LineTest {
 
@@ -52,5 +53,13 @@ class LineTest {
         Line line = new Line(firstPoint, secondPoint);
 
         assertEquals(deltaY, line.getLength());
+    }
+
+    @Test
+    void testisEqualGiven2SameLineExpectReturnTrue() {
+        Point point = new Point(0, 0);
+        Line line = new Line(point, point);
+
+        assertTrue(Line.isEqual(line, line));
     }
 }

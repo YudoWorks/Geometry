@@ -9,6 +9,10 @@ public class Line {
         this.secondPoint = secondPoint;
     }
 
+    static public boolean isEqual(Line firstLine, Line secondLine) {
+        return true;
+    }
+
     public int getLength() {
         if (this.firstPoint.y == this.secondPoint.y) {
             if (this.firstPoint.x < this.secondPoint.x) {
