@@ -10,10 +10,12 @@ public class Line {
     }
 
     public int getLength() {
-        if (this.firstPoint.y == this.secondPoint.y && this.firstPoint.x < this.secondPoint.x) {
-            return secondPoint.x - firstPoint.x;
-        } else if (this.firstPoint.y == this.secondPoint.y && this.firstPoint.x > this.secondPoint.x) {
-            return firstPoint.x - secondPoint.x;
+        if (this.firstPoint.y == this.secondPoint.y) {
+            if (this.firstPoint.x < this.secondPoint.x) {
+                return secondPoint.x - firstPoint.x;
+            } else if (this.firstPoint.x > this.secondPoint.x) {
+                return firstPoint.x - secondPoint.x;
+            }
         }
 
         return 0;
