@@ -1,9 +1,10 @@
-# Cartesian Line Length Calculator
+# Geometry
 
 ## Problem Description
 
-As a fan of geometry, I want to model a line based on points consisting of (x, y) coordinates using the cartesian
-system. So that I can calculate its length.
+1. As a fan of geometry, I want to model a line based on points consisting of (x, y) coordinates using the cartesian
+   system. So that I can calculate its length.
+2. As a fan of geometry, I want to compare two lines in equality based on the end points.
 
 ## Pre-Requisite to Run The Program
 
