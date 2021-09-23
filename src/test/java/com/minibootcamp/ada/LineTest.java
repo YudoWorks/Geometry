@@ -33,4 +33,14 @@ class LineTest {
 
         assertEquals(deltaX, line.getLength());
     }
+
+    @Test
+    void testgetLengthGiven2PointsThatXIsSameAndFirstPointXIsLessThanTheSecondPointExpectReturnDeltaY() {
+        int deltaY = 3;
+        Point firstPoint = new Point(0, 2);
+        Point secondPoint = new Point(0, 5);
+        Line line = new Line(firstPoint, secondPoint);
+
+        assertEquals(deltaY, line.getLength());
+    }
 }

@@ -18,6 +18,6 @@ public class Line {
             }
         }
 
-        return 0;
+        return secondPoint.y - firstPoint.y;
     }
 }
